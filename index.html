@@ -5,32 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
   <title>Maratona Discovery 01 - Dev.Finance$</title>
 </head>
 
 <body>
   <header>
-    <h1>Dev.Finance$</h1>
+    <h1 id="logo">Dev.Finance$</h1>
   </header>
-  <main>
-    <section>
-      <div>
-        <h2>Balanço</h2>
+
+  <main class="container">
+    <section id="balance">
+      <h2>Balanço</h2>
+
+      <div class="card">
         <h3>Entradas</h3>
         <p>R$ 5.000,00</p>
       </div>
-      <div>
+
+      <div class="card">
         <h3>Saídas</h3>
         <p>R$ 3.000,00</p>
       </div>
-      <div>
+
+      <div class="card total">
         <h3>Total</h3>
         <p>R$ 2.000,00</p>
       </div>
+
     </section>
-    <section>
+    <section id="transaction">
       <h2>Transações</h2>
-      <table>
+      <table id="data-table">
         <thead>
           <tr>
             <th>Descrição</th>
@@ -39,25 +50,26 @@
           </tr>
         <tbody>
           <tr>
-            <td> Luz </td>
-            <td> - R$ 500,000</td>
-            <td> 21/09/2021 </td>
+            <td class="description"> Luz </td>
+            <td class="expense"> - R$ 500,000</td>
+            <td class="date"> 21/09/2021 </td>
           </tr>
           <tr>
-            <td> Salário </td>
-            <td> R$ 2900,000</td>
-            <td> 05/09/2021 </td>
+            <td class="description"> Salário </td>
+            <td class="income"> R$ 2900,000</td>
+            <td class="date"> 05/09/2021 </td>
           </tr>
           <tr>
-            <td> Aluguel </td>
-            <td> - R$ 400,000</td>
-            <td> 05/09/2021 </td>
+            <td class="description"> Aluguel </td>
+            <td class="expense"> - R$ 400,000</td>
+            <td class="date"> 05/09/2021 </td>
           </tr>
         </tbody>
         </thead>
       </table>
     </section>
   </main>
+
   <footer>
     <p>Dev.Finance$</p>
   </footer>
