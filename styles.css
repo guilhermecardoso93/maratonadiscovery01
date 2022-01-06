@@ -135,7 +135,6 @@ button {
 button:hover {
   background: linear-gradient(148deg, #52e01f 43%, #3be03e 67%);
   border: 2px #f0f2f5 double;
-
 }
 
 .button.new {
@@ -223,10 +222,7 @@ td.expense {
   color: #e92929;
 }
 
-/*Modal*/
 .modal-overlay {
-  opacity: 0;
-  visibility: hidden;
   width: 100%;
   height: 100%;
 
@@ -238,6 +234,11 @@ td.expense {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 999;
 }
 
 .modal-overlay.active {
@@ -246,17 +247,12 @@ td.expense {
 }
 
 .modal {
-  background-color: #f0f2f5;
+  background: #f0f2f5;
   padding: 2.4rem;
-  border-radius: 0.25rem;
 
-  width: 90%;
-  max-width: 500px;
-
-  position:relative;
+  position: relative;
   z-index: 1;
 }
-
 /*Form*/
 #form {
   max-width: 500px;
